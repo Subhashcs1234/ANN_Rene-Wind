@@ -15,10 +15,18 @@ The sensors fitted across different machines involved in the process of energy g
 The objective is to build various classification models, tune them, and find the best one that will help identify failures so that the generators can be repaired before failing/breaking to reduce the overall maintenance cost.
 The nature of predictions made by the classification model will translate as follows:
 
-True positives (TP) are failures correctly predicted by the model. These will result in repair costs.
-False negatives (FN) are real failures where there is no detection by the model. These will result in replacement costs.
-False positives (FP) are detections where there is no failure. These will result in inspection costs.
+  True positives (TP) are failures correctly predicted by the model. These will result in repair costs.
+  False negatives (FN) are real failures where there is no detection by the model. These will result in replacement costs.
+  False positives (FP) are detections where there is no failure. These will result in inspection costs.
 
+## Data Dictionary
+
+The data provided is a transformed version of the original data which was collected using sensors.
+
+  Train.csv - To be used for training and tuning of models.
+  Test.csv - To be used only for testing the performance of the final best model.
+
+Both datasets consist of 40 predictor variables and 1 target variable.
 It is given that the cost of repairing a generator is much less than the cost of replacing it, and the cost of inspection is less than the cost of repair.
 
 “1” in the target variable should be considered as “failure” and “0” represents “No failure”.
