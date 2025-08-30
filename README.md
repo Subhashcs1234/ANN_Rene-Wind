@@ -23,7 +23,7 @@ The nature of predictions made by the classification model will translate as fol
 
 The data provided is a transformed version of the original data which was collected using sensors.
 
-  Train.csv - To be used for training and tuning of models.
+  Train.csv - To be used for training and tuning of models.    
   Test.csv - To be used only for testing the performance of the final best model.
 
 Both datasets consist of 40 predictor variables and 1 target variable.
